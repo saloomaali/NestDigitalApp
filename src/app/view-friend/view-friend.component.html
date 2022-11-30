@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor = "let i of friend">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa8B6eeOlitU8qoc2WLmfBxmvybCQ3fUQRKvEF2jKb0nubBdx0wrro0X99FJh7PAm2R48&usqp=CAU" class="card-img-top rounded-circle" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Name : {{i.name}} </h5>
+                          <p class="card-text">Friend Name : {{i.friendName}} </p>
+                          <p class="card-text">Friend Nickname : {{i.friendNickName}} </p>
+                          <p class="card-text">Describe your Friend : {{i.DescribeYourFriend}} </p>
+                          
+
+                          <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

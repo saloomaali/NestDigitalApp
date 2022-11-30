@@ -1,1 +1,31 @@
-<p>view-course works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <td>Course Title</td>
+                                <td>Course Description</td>
+                                <td>Course Date</td>
+                                <td>Course Duration</td>
+                                <td>Course Venue</td>
+                            </tr>
+                        </thead>
+                       <tbody>
+                        <tr *ngFor = "let i of courses">
+                            <td>{{i.courseTitle}} </td>
+                            <td>{{i.courseDescription}} </td>
+                            <td>{{i.courseDate}}</td>
+                            <td>{{i.courseDuration}}</td>
+                            <td>{{i.courseVenue}}</td>
+                        </tr>
+                       </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
