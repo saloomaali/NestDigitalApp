@@ -10,6 +10,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { EmployeePortalComponent } from './employee-portal/employee-portal.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { HomeNavbarComponent } from './home-navbar/home-navbar.component';
+import { ViewCourseComponent } from './view-course/view-course.component';
 
 const myRouter:Routes = [
   {
@@ -48,7 +50,9 @@ const myRouter:Routes = [
     GalleryComponent,
     ContactComponent,
     EmployeePortalComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    HomeNavbarComponent,
+    ViewCourseComponent
   ],
   imports: [
     BrowserModule,
