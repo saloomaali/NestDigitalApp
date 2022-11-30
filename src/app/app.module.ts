@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { AddFriendComponent } from './add-friend/add-friend.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
+import { EmployeeRegisterComponent } from './employee-register/employee-register.component';
 
 const myRouter:Routes = [
   {
@@ -60,6 +61,10 @@ const myRouter:Routes = [
   {
     path:"addFriend",
     component:AddFriendComponent 
+  },
+  {
+    path:"employeeRegister",
+    component:EmployeeRegisterComponent
   }
 
 
@@ -81,7 +86,8 @@ const myRouter:Routes = [
     AddCourseComponent,
     AddFriendComponent,
     AdminNavbarComponent,
-    EmployeeNavbarComponent
+    EmployeeNavbarComponent,
+    EmployeeRegisterComponent
   ],
   imports: [
     BrowserModule,
