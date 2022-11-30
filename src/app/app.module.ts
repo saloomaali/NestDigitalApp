@@ -12,6 +12,8 @@ import { EmployeePortalComponent } from './employee-portal/employee-portal.compo
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { HomeNavbarComponent } from './home-navbar/home-navbar.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ViewFriendComponent } from './view-friend/view-friend.component'
 
 const myRouter:Routes = [
   {
@@ -37,6 +39,14 @@ const myRouter:Routes = [
   {
     path:"adminLogin",
     component:AdminLoginComponent
+  },
+  {
+    path:"viewCourse",
+    component:ViewCourseComponent 
+  },
+  {
+    path:"viewFriend",
+    component:ViewFriendComponent 
   }
 
 
@@ -52,12 +62,14 @@ const myRouter:Routes = [
     EmployeePortalComponent,
     AdminLoginComponent,
     HomeNavbarComponent,
-    ViewCourseComponent
+    ViewCourseComponent,
+    ViewFriendComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRouter)
+    RouterModule.forRoot(myRouter),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
