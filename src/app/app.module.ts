@@ -65,8 +65,8 @@ const myRouter:Routes = [
   {
     path:"employeeRegister",
     component:EmployeeRegisterComponent
-  }
-
+  },
+  
 
 
 ]

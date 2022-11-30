@@ -4,15 +4,15 @@
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3 mt-4">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
-                    <label for="" class="form-label">Username</label>
-                    <input type="text" class="form-control">
+                    <label for="" class="form-label">Employee Id</label>
+                    <input name="EmpId" [(ngModel)] = "EmpId" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
                     <label for="" class="form-label">Password</label>
-                    <input type="password" name="" id="" class="form-control">
+                    <input type="password" name="password" [(ngModel)] = "password" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-info">Login</button>
+                    <button (click) = "readValue()" class="btn btn-info">Login</button>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                     <a routerLink="/employeeRegister" class="btn btn-warning">New Employee Registration</a>

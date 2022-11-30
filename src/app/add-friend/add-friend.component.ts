@@ -25,6 +25,14 @@ export class AddFriendComponent {
 
 
         console.log(response)
+
+        if(response.status == "success"){
+
+          this.name =""
+          this.friendName = ""
+          this.friendNickName = ""
+          this.DescribeYourFriend = ""
+        }
       }
     )
   

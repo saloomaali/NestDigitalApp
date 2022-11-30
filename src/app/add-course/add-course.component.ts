@@ -25,6 +25,16 @@ export class AddCourseComponent {
 
       (response:any)=>{
         console.log(response)
+
+        if(response.status == "success"){
+
+          this.courseTitle = ""
+          this.courseDescription = ""
+          this.courseDuration = ""
+          this.courseDate = ""
+          this.courseVenue = ""
+
+        }
       }
     )
 
