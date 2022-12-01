@@ -34,10 +34,37 @@ readValue=()=>{
   let data:any = {"empId":this.empId, "firstName":this.firstName, "lastName":this.lastName, "houseNo":this.houseNo, "houseName":this.houseName, 
   "streetName":this.streetName,"pinCode":this.pinCode, "district":this.district,"state":this.state,"country":this.country, "mobileNo":this.mobileNo, "emailId":this.emailId, "parentName":this.parentName, "gender":this.gender,
    "highestDegree":this.highestDegree,  "yearsOfExperience": this.yearsOfExperience, "dateOfJoining":this.dateOfJoining, "username":this.username, "password":this.password,"confirmPassword":this.confirmPassword}
-  if(this.password == this.confirmPassword){
+
+
+  if(this.password == this.confirmPassword)
+  {
+
     console.log(data)
+    this.empId = ""
+    this.firstName = ""
+    this.lastName = ""
+    this.houseNo = ""
+    this.houseName = ""
+    this.streetName = ""
+    this.pinCode = ""
+    this.district = ""
+    this.state = ""
+    this.country = ""
+    this.mobileNo = ""
+    this.emailId = ""
+    this.parentName = ""
+    this.gender = ""
+    this.highestDegree = ""
+    this.yearsOfExperience = ""
+    this.dateOfJoining = ""
+    this.username = ""
+    this.password = ""
+    this.confirmPassword = ""
+
     alert("Registerd Successfully")
+
   }
+
   else{
     alert("Password and confirm Password doesn't match")
   }

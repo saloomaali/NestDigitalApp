@@ -15,8 +15,11 @@ export class EmployeePortalComponent {
 
   readValue=()=>{
     let data:any = {"EmpId" : this.EmpId, "password" : this.password}
+
     if(this.EmpId == "1122" && this.password == "1234"){
+
       this.route.navigate(['/addCourse'])
+      
     }
 
   }
