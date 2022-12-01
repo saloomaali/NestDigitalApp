@@ -60,6 +60,7 @@ readValue=()=>{
     this.username = ""
     this.password = ""
     this.confirmPassword = ""
+    
 
     alert("Registerd Successfully")
 
